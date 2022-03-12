@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Event Management System</title>
+    <script type="text/javascript" src="js/JScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style_css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="style_css/Main.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div class="bgimage">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">EventMs</label>
+        <ul>
+            <li><a class="active" href="Default.aspx">Home</a></li>
+            <li><a href="Aboutus.aspx">AboutUs</a></li>
+            <li><a href="Gallerry.aspx">Gallery</a></li>
+            <li><a href="Default2.aspx">ContactUs</a></li>
+            <li><a href="Ragister.aspx">Ragister</a></li>
+            <li><a href="Login.aspx">Login</a></li>
+        </ul>
+    </nav>
+    <div>
+        <asp:ContentPlaceHolder id="MainMasterContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <div class="footer">
+	        <p> Copyright@abc.com </p>
+	    </div>
+        </div>
+    </form>
+</body>
+</html>

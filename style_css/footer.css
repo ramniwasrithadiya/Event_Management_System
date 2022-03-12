@@ -1,0 +1,17 @@
+﻿.footer 
+{
+    position: absolute;
+	background: #0022e6;
+	bottom: 0px;
+    height: 5%;
+    width: 100%;
+	text-align: center;
+}
+
+p {
+	color: white;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    font-family:  montserrat;
+}
